@@ -1,0 +1,156 @@
+@media screen and (max-width: 700px) {
+  .feed_home {
+    margin-bottom: 30px;
+  }
+  .feed_home .zocalo_tul li:last-child {
+    border-right: 0px;
+  }
+  .feed_home .zocalo_tul li {
+    font-size: 12px;
+  }
+  .encabezado_ {
+    bottom: 0;
+    border-top: 1px solid rgb(222, 222, 222);
+  }
+  .float_hed {
+    display: none;
+  }
+  .home_users_2 {
+    margin-top: 0px;
+    border-radius: 0;
+    margin-bottom: 20px;
+  }
+  .home_users {
+    margin-top: 0px;
+    border-radius: 0;
+    margin-bottom: 20px;
+  }
+  .feed_home {
+    border: 0;
+    border-top: 1px solid rgb(217, 217, 217);
+    border-bottom: 2px solid rgb(217, 217, 217);
+    margin-bottom: 13px;
+    background-color: #fff;
+  }
+  .feed_home .cont_ {
+    padding: 16px;
+  }
+  .encabezado_ li {
+    font-size: 19px;
+  }
+  .encabezado_ li a {
+    padding-top: 8px;
+    padding-bottom: 0px;
+  }
+  .feed_home .title-post {
+    font-size: 15px;
+    line-height: 16px;
+    padding: 20px;
+    padding-left: 20px;
+  }
+
+.descipricion_single p {
+  text-align: left;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+.single_influ {
+  margin-top: 20px;
+}
+/* Login Registro */
+.elcontenido_ .fomularios_ {
+  margin-top: 30px;
+}
+.registro_login .elcontenido_ {
+  max-width: 100%;
+}
+.registro_login .quienes_ {
+  max-width: 100%;
+}
+.elcontenido_ .fomularios_ small {
+  margin-bottom: 30px;
+  display: block;
+  text-align: center;
+}
+.elcontenido_ .fomularios_ h1 {
+  text-align: center;
+}
+.elcontenido_ .fomularios_ input[type=text] {
+  text-align: center;
+}
+.elcontenido_ .fomularios_ input[type=password] {
+  text-align: center;
+}
+.registro_login .quienes_ {
+  padding: 30px 20px;
+}
+.segurofooter_ {
+  text-align: center;
+}
+.home_users .avatar_ {
+  max-width: 60%;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.home_users .avatar_ img {
+  max-width: 90px;
+  height: 90px;
+  border-radius: 100px;
+}
+.home_users .avatar_ h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.home_users .estadisticas {
+  max-width: 40%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+.home_users .estadisticas li  {
+  padding: 6px;
+  font-size: 12px;
+}
+.home_users .estadisticas i {
+  font-size: 19px;
+}
+.home_users {
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+}
+.styky_ {
+  padding: 10px 20px;
+}
+.styky_.fixed {
+  margin-top: 0px;
+}
+.styky_ .foto_ img {
+  width: 35px;
+  height: 35px;
+}
+.styky_ .nombre_ h2 {
+  font-size: 17px;
+  padding-top: 6px;
+}
+.styky_ .nombre_ h2 {
+  font-size: 15px;
+  font-weight: 400;
+}
+.listados_ .regresar_styki {
+  padding: 4px 10px;
+  font-size: 11px;
+  margin-top: 5px;
+}
+#reply-title {
+  font-size: 19px;
+}
+#commentform > p.logged-in-as {
+  margin-top: 0px;
+}
+.comentarios_sin {
+  padding: 20px;
+}
+
+
+}
