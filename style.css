@@ -507,18 +507,22 @@ a {
 
 /* Login registro */
 .registro_login {
-  background-color: #fff;
   margin: auto;
   max-width: 900px;
   margin-bottom: 40px;
   border-radius: 2px;
   overflow: hidden;
-  box-shadow: 0 15px 35px 0 rgb(60 66 87 / 8%), 0 5px 15px 0 rgb(0 0 0 / 12%);
+  margin-top: 80px;
 }
   .registro_login .elcontenido_ {
     width: 100%;
-    max-width: 50%;
+    max-width: 55%;
     float: left;
+    background: #fff;
+    box-shadow: 0 15px 35px 0 rgb(60 66 87 / 8%), 0 5px 15px 0 rgb(0 0 0 / 12%);
+    border: 1px solid rgb(235, 235, 235);
+    padding-bottom: 30px;
+
   }
   .registro_login .elcontenido_ .invitando_ i {
     float: left;
@@ -543,11 +547,14 @@ a {
   }
 
   .registro_login .quienes_ {
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
     width: 100%;
     max-width: 45%;
     float: right;
     padding-top: 80px;
     padding-bottom: 70px;
+    height: 100vh;
     color: #fff;
     padding-left: 50px;
     padding-right: 50px;
@@ -586,7 +593,6 @@ a {
     text-align: center;
   }
   .quienes_ .contador_card_ .grid_ {
-    border-bottom: 1px solid red;
     padding: 20px;
     border-radius: 4px;
   }
@@ -707,3 +713,196 @@ a {
   .boton_login_registro h5 a:hover {
     text-decoration: underline;
   }
+
+.content_page {
+  padding: 30px;
+  padding-right: 0px;
+}
+
+
+.swpm-login-widget-logged {
+
+}
+.swpm-logged-username {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+.swpm-logged-status {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+.swpm-logged-membership {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+.swpm-logged-expiry {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+.swpm-edit-profile-link {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+.swpm-logged-logout-link a {
+  background-color: var(--rojo);
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 7px;
+  margin-top: 20px;
+  display: block;
+      cursor: pointer;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+  .swpm-logged-logout-link a:hover {
+    background-color: #333;
+  }
+.swpm-edit-profile-link a {
+  background-color: rgb(58, 73, 236);
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 7px;
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+      cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#swpm-editprofile-form > table > tbody > tr.swpm-profile-username-row {
+}
+#swpm-editprofile-form > table > tbody > tr  {
+  margin-bottom: 13px;
+  display: block;
+}
+#swpm-editprofile-form > table > tbody > tr input {
+  width: 100%;
+  margin-left: 10px;
+}
+#swpm-editprofile-form > table > tbody > tr.swpm-profile-membership-level-row {
+  border-left: 10px solid rgb(83, 218, 88);
+  padding: 10px;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  display: block;
+  background-color: rgb(200, 252, 184);
+}
+.swpm-profile-account-delete-section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+  .swpm-profile-account-delete-section a {
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    display: none;
+  }
+  .swpm-edit-profile-submit {
+    background-color: rgb(58, 73, 236);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border: 0px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .swpm-pw-reset-submit {
+    background-color: rgb(58, 73, 236);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    margin-top: 1px;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border: 0px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+  }
+  .swpm-login-form-submit {
+    background-color: rgb(58, 73, 236);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border: 0px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+  }
+  .swpm-login-form-pw-reset-link {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(227, 227, 227);
+    display: block;
+    margin-bottom: 10px;
+  }
+
+.swpm-login-form-register-link {
+  background-color: var(--rojo);
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 7px;
+  margin-top: 20px;
+  display: block;
+      cursor: pointer;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.swpm-login-form-register-link:hover {
+  background-color: #333;
+}
+
+.bttn_ntrr {
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 7px 20px;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 5px;
+  background: rgba(241,231,103,1);
+background: -moz-linear-gradient(top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(241,231,103,1)), color-stop(100%, rgba(254,182,69,1)));
+background: -webkit-linear-gradient(top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+background: -o-linear-gradient(top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+background: -ms-linear-gradient(top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+background: linear-gradient(to bottom, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645', GradientType=0 );
+}
+.bttn_ntrr:hover {
+  opacity: 0.5;
+}
