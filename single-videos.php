@@ -5,16 +5,21 @@
 <div class="feed_home single_influ">
 <div class="cont_">
   <center>
+    <?php if ( is_user_logged_in() ) { ?>
     <?php
     $file = get_field('video');?>
     <video controls autoplay loop>
       <source src="<?php echo $file['url']; ?>">
       </video>
+  <?php } else { ?>
+    <!-- Acá la img que no está permitido -->
+    <img src="<?php bloginfo('template_directory'); ?>/contenido-bloqueado.jpg" class="imgblock_" alt="Conotenido bloqueado">
+    <a href="<?php echo get_home_url(); ?>/login/" class="boton_block_leads"><i class="fas fa-lock-open"></i>Desbloquear contenido del usuario</a>
+  <?php } ?>
   </center>
   <h1 class="title-post"><?php the_title(); ?></h1>
 </div>
 
-<!-- <?php echo $file['url']; ?> -->
 
 <div class="zocalo_tul">
   <li class="noseparacion"> <?php echo do_shortcode('[post-views]'); ?></li>

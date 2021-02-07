@@ -13,18 +13,58 @@ body {
 }
 .styky_ {display: none;}
 .styky_.fixed {display: none;}
+.registro_login .quienes_ {
+  padding-bottom: 50px;
+  height: auto;
+}
 </style>
 
 
 <div class="registro_login">
   <div class="elcontenido_">
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-    <div class="fomularios_">
-      <h1><i class="fas fa-user-shield"></i> <?php the_title(); ?></h1>
-      <?php the_content(); ?>
+    <div class="comprar_membresia">
+      <div class="cabeza_membre">
+        <h2>Accede a mi contenido exclusivo</h2>
+        <h3>Disfruta de todo mi contenido exclusivo desde <b>$6</b> dólares al mes.</h3>
+      </div>
+      <div class="tabla_beneficios_">
+        <li>Acceso a todo el contenido <i class="far fa-check-circle"></i></li>
+        <li>Descargar APP privada del autor <i class="far fa-check-circle"></i></li>
+        <li>Notificaciones cuando se agregue nuevo contenido <i class="far fa-check-circle"></i></li>
+        <li>Múltiples formas de adquirir tu membresía <i class="far fa-check-circle"></i></li>
+        <li>Comentar estados y publicaciones <i class="far fa-check-circle"></i></li>
+        <li>Descuentos increíbles <i class="far fa-check-circle"></i></li>
+      </div>
+      <div class="tresplanes_membre">
+        <div class="grid_">
+          <i class="fas fa-crown"></i>
+          <h4>Mensual 6$</h4>
+          <small>20.000 pesos COL</small>
+          <a href="#" class="bottom_membre">Comprar</a>
+        </div>
+        <div class="grid_">
+          <i class="fas fa-crown"></i>
+          <h4>Semestral 46$</h4>
+          <small>90.000 pesos COL</small>
+          <a href="#" class="bottom_membre">Comprar</a>
+        </div>
+        <div class="grid_">
+          <i class="fas fa-crown"></i>
+          <h4>Anual 126$</h4>
+          <small>300.000 pesos COL</small>
+          <a href="#" class="bottom_membre">Comprar</a>
+        </div>
+      </div>
+      <div class="informa_pago">
+        <h4>Información importante</h4>
+        <li><i class="fas fa-shield-alt"></i>La facturación se hace a nombre de Laooz Studios</li>
+        <li><i class="fas fa-shield-alt"></i>Puede cancelar sus suscripción en cualquier momento</li>
+        <li><i class="fas fa-shield-alt"></i>Puede pagar con tarjetas de crédito, débito, transferencias bancarias y efectivo <a href="#">Consulte aquí los diferentes medios de pago</a>  </li>
+        <li><i class="fas fa-shield-alt"></i>No guardamos ninguna información bancaria</li>
+        <li><i class="fas fa-shield-alt"></i>Su información 100% segura</li>
+        <li><i class="fas fa-shield-alt"></i><b>¿Dudas o consultas?</b> info@fans4.net</li>
+      </div>
     </div>
-  <?php endwhile; else: ?>
-  <?php endif; ?>
   </div>
   <div class="quienes_">
     <div class="card_">
@@ -46,14 +86,6 @@ body {
         <i class="fas fa-users"></i>
         <p><?php echo $pagando - $nativos; ?></p>
       </div>
-    </div>
-    <div class="texto_invita_">
-      <h2>Disfruta de todo mi contenido exclusivo desde <b>$6</b> dólares al mes.</h2>
-      <?php if ( is_user_logged_in() ) { ?>
-        <!-- Acá podemos mostrar algo para el logeado -->
-      <?php } else { ?>
-        <a href="<?php echo get_home_url(); ?>/membership-join/" class="bttn_ntrr">¡Suscribirme!</a>
-      <?php } ?>
     </div>
   </div>
 </div>

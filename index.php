@@ -13,6 +13,7 @@
 <div class="feed_home">
 <div class="cont_">
   <center>
+    <?php if ( is_user_logged_in() ) { ?>
     <?php
     $image = get_field('foto');
     if( !empty( $image ) ): ?>
@@ -27,6 +28,11 @@
       <source src="<?php echo $file['url']; ?>">
       </video>
     <?php endif; ?>
+  <?php } else { ?>
+    <!-- Acá la img que no está permitido -->
+    <img src="<?php bloginfo('template_directory'); ?>/contenido-bloqueado.jpg" class="imgblock_" alt="Conotenido bloqueado">
+    <a href="<?php echo get_home_url(); ?>/login/" class="boton_block_leads"><i class="fas fa-lock-open"></i>Desbloquear contenido del usuario</a>
+  <?php } ?>
   </center>
 </div>
 <h1 class="title-post"><?php the_title(); ?></h1>

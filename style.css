@@ -547,6 +547,7 @@ a {
   }
 
   .registro_login .quienes_ {
+    z-index: 4;
     border-top-right-radius: 11px;
     border-bottom-right-radius: 11px;
     width: 100%;
@@ -906,3 +907,126 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', end
 .bttn_ntrr:hover {
   opacity: 0.5;
 }
+.boton_block_leads {
+  background-color: rgb(67, 138, 249);
+  color: #fff;
+  padding: 20px;
+  display: block;
+}
+.boton_block_leads i {
+  padding-right: 10px;
+}
+.boton_block_leads:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Compar membresia */
+.comprar_membresia {
+  width: 100%;
+}
+.comprar_membresia .cabeza_membre {
+  border-bottom: 1px solid rgb(224, 224, 224);
+  margin-bottom: 12px;
+  padding: 40px;
+  padding-bottom: 12px;
+}
+  .comprar_membresia .cabeza_membre h2 {
+    font-weight: 700;
+    color: var(--rojo);
+    font-size: 19px;
+  }
+  .comprar_membresia .cabeza_membre h3 {
+    font-weight: 300;
+    font-size: 15px;
+    color: rgb(119, 119, 119);
+    padding-bottom: 20px;
+    width: 70%;
+  }
+
+.comprar_membresia .tabla_beneficios_ {
+  padding: 30px;
+  overflow: hidden;
+}
+  .comprar_membresia .tabla_beneficios_ li {
+    border-bottom: 1px dotted rgb(226, 226, 226);
+    padding: 14px 0px;
+  }
+    .comprar_membresia .tabla_beneficios_ li:last-child {
+      border-bottom: 0px;
+    }
+  .comprar_membresia .tabla_beneficios_ i {
+    color: green;
+    float: right;
+    font-size: 20px;
+  }
+
+
+.comprar_membresia .tresplanes_membre {
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+  .comprar_membresia .tresplanes_membre .grid_ {
+    width: 100%;
+    float: left;
+    max-width: 33.3%;
+    padding: 20px 14px;
+    text-align: center;
+  }
+  .comprar_membresia .tresplanes_membre .grid_ a {
+    color: #fff;
+  }
+  .tresplanes_membre .grid_ small {
+    color: rgb(121, 121, 121);
+    display: block;
+    margin-bottom: 12px;
+  }
+  .tresplanes_membre .grid_ .bottom_membre {
+    background-color: rgb(224, 157, 26);
+    color: #000;
+    padding: 5px 10px;
+    display: block;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  .tresplanes_membre .grid_ .bottom_membre:hover {
+    background-color: var(--rojo);
+  }
+  .tresplanes_membre .grid_ i {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+.comprar_membresia .informa_pago {
+  padding: 30px;
+}
+  .comprar_membresia .informa_pago h4 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .comprar_membresia .informa_pago li {
+    border-bottom: 1px dotted rgb(219, 219, 219);
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+    list-style: none;
+    color: rgb(102, 102, 102);
+  }
+  .comprar_membresia .informa_pago li:last-child {
+    border-bottom: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .comprar_membresia .informa_pago li a {
+    font-weight: 600;
+    text-decoration: underline;
+    color: var(--rojo);
+  }
+  .comprar_membresia .informa_pago li i {
+    padding-right: 10px;
+    color: #000;
+  }
