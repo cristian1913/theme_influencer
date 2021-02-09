@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Home
+*/
+?>
 <?php include('header.php');?>
 
 <?php include('cover_portada.php');?>
@@ -5,7 +10,7 @@
 <?php
   query_posts(array(
     'post_type' => array('fotos', 'videos'),
-    'showposts' => 10
+    'showposts' => 20
   ));
   // Inicia el ciclo
   while (have_posts()) : the_post(); ?>
@@ -31,7 +36,7 @@
   <?php } else { ?>
     <!-- Acá la img que no está permitido -->
     <img src="<?php bloginfo('template_directory'); ?>/contenido-bloqueado.jpg" class="imgblock_" alt="Conotenido bloqueado">
-    <a href="<?php echo get_home_url(); ?>/login/" class="boton_block_leads"><i class="fas fa-lock-open"></i>Desbloquear contenido del usuario</a>
+    <a href="<?php echo get_home_url(); ?>/membership-join/" class="boton_block_leads"><i class="fas fa-lock-open"></i>Unblock content</a>
   <?php } ?>
   </center>
 </div>
@@ -42,7 +47,7 @@
     </a>
   <li>
     <a href="<?php the_permalink(); ?>">
-      <i class="far fa-calendar-minus"></i> Hace <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' '; ?>
+      <i class="far fa-calendar-minus"></i> <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' '; ?> ago
     </a>
   </li>
   <li>
@@ -52,8 +57,14 @@
   </li>
 </div>
 </div>
+
   <?php endwhile;?>
 
+<div class="dositems_">
+  <small>Filter more content:</small>
+  <a href="<?php echo get_home_url(); ?>/fotos/"><i class="far fa-images"></i></a>
+  <a href="<?php echo get_home_url(); ?>/videos/"><i class="fab fa-youtube"></i></a>
+</div>
 
 <div class="pagina_enblanco">
   <p></p>

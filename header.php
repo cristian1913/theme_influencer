@@ -23,7 +23,7 @@
       <li><a href="<?php echo wp_logout_url( home_url() ); ?>"><i class="fas fa-sign-out-alt"></i></a></li>
     <?php } else { ?>
       <!-- Si no está logueado muestre lo siguiente -->
-      <li><a href="<?php echo get_home_url(); ?>/login/"><i class="far fa-user-circle"></i></a></li>
+      <li><a href="<?php echo get_home_url(); ?>/membership-login/"><i class="far fa-user-circle"></i></a></li>
     <?php } ?>
   </div>
   <div class="float_hed">.</div>

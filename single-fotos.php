@@ -14,7 +14,7 @@
   <?php } else { ?>
     <!-- Acá la img que no está permitido -->
     <img src="<?php bloginfo('template_directory'); ?>/contenido-bloqueado.jpg" class="imgblock_" alt="Conotenido bloqueado">
-    <a href="<?php echo get_home_url(); ?>/login/" class="boton_block_leads"><i class="fas fa-lock-open"></i>Desbloquear contenido del usuario</a>
+    <a href="<?php echo get_home_url(); ?>/membership-login/" class="boton_block_leads"><i class="fas fa-lock-open"></i>Unblock content</a>
   <?php } ?>
   </center>
   <h1 class="title-post"><?php the_title(); ?></h1>
@@ -22,7 +22,7 @@
 
 <div class="zocalo_tul">
     <li class="noseparacion"> <?php echo do_shortcode('[post-views]'); ?></li>
-    <li><i class="far fa-calendar-minus"></i> Hace <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' '; ?></li>
+    <li><i class="far fa-calendar-minus"></i> <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' '; ?> ago</li>
     <li><i class="fas fa-comments"></i> <?php comments_number('');?></li>
 </div>
 </div>

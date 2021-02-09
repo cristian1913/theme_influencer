@@ -66,6 +66,10 @@
 }
 .registro_login .quienes_ {
   max-width: 100%;
+  height: auto;
+  padding-bottom: 60px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .elcontenido_ .fomularios_ small {
   margin-bottom: 30px;
@@ -73,13 +77,10 @@
   text-align: center;
 }
 .elcontenido_ .fomularios_ h1 {
-  text-align: center;
 }
 .elcontenido_ .fomularios_ input[type=text] {
-  text-align: center;
 }
 .elcontenido_ .fomularios_ input[type=password] {
-  text-align: center;
 }
 .registro_login .quienes_ {
   padding: 30px 20px;
@@ -151,6 +152,14 @@
 .comentarios_sin {
   padding: 20px;
 }
-
-
+.registro_login {
+  margin-top: 0px;
+}
+.comprar_membresia .tresplanes_membre {
+  padding: 0px;
+}
+.comprar_membresia .tresplanes_membre .grid_ {
+  max-width: 100%;
+  border-bottom: 20px solid #fff;
+}
 }

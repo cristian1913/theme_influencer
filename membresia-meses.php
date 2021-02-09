@@ -1,10 +1,9 @@
 <?php
 /*
-Template name: Login / Registro
+Template name: Meses
 */
 ?>
 <?php include('header.php');?>
-
 <?php include('stiky.php');?>
 
 
@@ -12,26 +11,27 @@ Template name: Login / Registro
 body {
   background-color: #f7fafc !important;
 }
+.styky_ {display: none;}
+.styky_.fixed {display: none;}
 </style>
 
 
 <div class="registro_login">
   <div class="elcontenido_">
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <div class="fomularios_">
-      <h1><i class="fas fa-user-shield"></i> Ingresar</h1>
-      <?php echo do_shortcode('[swpm_login_form]');?>
-      <!-- <input type="text" name="" value="" placeholder="Nombre">
-      <input type="password" name="" value="" placeholder="Contraseña">
-      <input type="button" name="" value="Ingresar"> -->
-      <!-- <small>¿Tienes una cuenta? <a href="#">Incresa aquí</a>.</small> -->
+      <h1><i class="fas fa-user-shield"></i> <?php the_title(); ?></h1>
+      <?php the_content(); ?>
     </div>
+  <?php endwhile; else: ?>
+  <?php endif; ?>
   </div>
   <div class="quienes_">
     <div class="card_">
       <a href="<?php echo get_home_url(); ?>">
-      <img src="https://steamuserimages-a.akamaihd.net/ugc/832455202636707029/5A0A3A6941B4902BCACEDE7ECFE569E74D8983BB/" alt="">
+      <img src="<?php bloginfo('template_directory'); ?>/avatar.png" alt="">
       </a>
-      <h3>Karlee Grey<img src="<?php bloginfo('template_directory'); ?>/verificado.png" alt="Perfil verificado!"></h3>
+      <h3><?php echo get_bloginfo(); ?><img src="<?php bloginfo('template_directory'); ?>/verificado.png" alt="Perfil verificado!"></h3>
     </div>
     <div class="contador_card_">
       <div class="grid_">
@@ -48,7 +48,12 @@ body {
       </div>
     </div>
     <div class="texto_invita_">
-      <h2>Disfruta de todo mi contenido exclusivo desde <b>$6</b> dólares al mes.</h2>
+      <h2>Enjoy all my exclusive content from <b>$6</b> per month.</h2>
+      <?php if ( is_user_logged_in() ) { ?>
+        <!-- Acá podemos mostrar algo para el logeado -->
+      <?php } else { ?>
+        <a href="<?php echo get_home_url(); ?>/membership-join/" class="bttn_ntrr">Subscribe!</a>
+      <?php } ?>
     </div>
   </div>
 </div>

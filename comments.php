@@ -25,7 +25,7 @@ comment_form(array(
   // see codex http://codex.wordpress.org/Function_Reference/comment_form for default values
   // tutorial here http://blogaliving.com/wordpress-adding-comment_form-theme/
   'comment_field' => '<p><textarea name="comment" id="comment" cols="58" rows="4" tabindex="4" aria-required="true"></textarea></p>',
-  'label_submit' => 'Publicar comentario',
+  'label_submit' => 'Send',
   'comment_notes_after' => ''
   ));
 

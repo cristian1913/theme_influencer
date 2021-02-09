@@ -24,9 +24,9 @@ body {
   <div class="quienes_">
     <div class="card_">
       <a href="<?php echo get_home_url(); ?>">
-      <img src="https://steamuserimages-a.akamaihd.net/ugc/832455202636707029/5A0A3A6941B4902BCACEDE7ECFE569E74D8983BB/" alt="">
+      <img src="<?php bloginfo('template_directory'); ?>/avatar.png" alt="">
       </a>
-      <h3>Karlee Grey<img src="<?php bloginfo('template_directory'); ?>/verificado.png" alt="Perfil verificado!"></h3>
+      <h3><?php echo get_bloginfo(); ?><img src="<?php bloginfo('template_directory'); ?>/verificado.png" alt="Perfil verificado!"></h3>
     </div>
     <div class="contador_card_">
       <div class="grid_">
@@ -43,11 +43,11 @@ body {
       </div>
     </div>
     <div class="texto_invita_">
-      <h2>Disfruta de todo mi contenido exclusivo desde <b>$6</b> dólares al mes.</h2>
+      <h2>Enjoy all my exclusive content from <b>$6</b> per month.</h2>
       <?php if ( is_user_logged_in() ) { ?>
         <!-- Acá podemos mostrar algo para el logeado -->
       <?php } else { ?>
-        <a href="<?php echo get_home_url(); ?>/membership-join/" class="bttn_ntrr">¡Suscribirme!</a>
+        <a href="<?php echo get_home_url(); ?>/membership-join/" class="bttn_ntrr">Subscribe!</a>
       <?php } ?>
     </div>
   </div>

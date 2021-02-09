@@ -80,7 +80,7 @@ a {
 }
 .home_users .portada_ {
   background-color: var(--rojo);
-  background-image: url('https://www.emprendedores.es/wp-content/uploads/2020/06/sanfracisco_ocaso-1024x683.jpg');
+  background-image: url('cover.jpg');
   background-size: cover;
   background-position: top center;
   width: 100%;
@@ -294,7 +294,10 @@ a {
   }
   .comment-author img {
     float: left;
-    display: none;
+    /* display: none; */
+    margin-right: 14px;
+    margin-top: 10px;
+    border-radius: 100px;
   }
   .comentarios_sin .commentmetadata {
     font-size: 11px;
@@ -1029,4 +1032,50 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', end
   .comprar_membresia .informa_pago li i {
     padding-right: 10px;
     color: #000;
+  }
+
+
+.navigation {
+  width: 100%;
+  max-width: 650px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+  overflow: hidden;
+}
+.navigation a {
+  background-color: var(--rojo);
+  padding: 10px 20px;
+  font-size: 12px;
+  display: inline-block;
+  color: #fff;
+  border-radius: 6px;
+}
+.navigation .alignleft {
+  float: left;
+}
+.navigation .alignright {
+  float: right;
+}
+
+.dositems_ {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid rgb(215, 215, 215);
+}
+  .dositems_ small {
+    font-size: 15px;
+    display: block;
+  }
+  .dositems_ i {
+    font-size: 40px;
+    padding: 10px 30px;
+  }
+  .dositems_ i:hover {
+    color: var(--rojo);
   }

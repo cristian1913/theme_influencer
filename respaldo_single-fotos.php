@@ -7,29 +7,28 @@
   <center>
     <?php if ( is_user_logged_in() ) { ?>
     <?php
-    $file = get_field('video');?>
-    <video controls autoplay loop>
-      <source src="<?php echo $file['url']; ?>">
-      </video>
+    $image = get_field('foto');
+    if( !empty( $image ) ): ?>
+        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+    <?php endif; ?>
   <?php } else { ?>
     <!-- Acá la img que no está permitido -->
     <img src="<?php bloginfo('template_directory'); ?>/contenido-bloqueado.jpg" class="imgblock_" alt="Conotenido bloqueado">
-    <a href="<?php echo get_home_url(); ?>/membership-login/" class="boton_block_leads"><i class="fas fa-lock-open"></i>Unblock content</a>
+    <a href="<?php echo get_home_url(); ?>/login/" class="boton_block_leads"><i class="fas fa-lock-open"></i>Desbloquear contenido del usuario</a>
   <?php } ?>
   </center>
   <h1 class="title-post"><?php the_title(); ?></h1>
 </div>
 
-
 <div class="zocalo_tul">
-  <li class="noseparacion"> <?php echo do_shortcode('[post-views]'); ?></li>
-  <li><i class="far fa-calendar-minus"></i> <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' '; ?> ago</li>
-  <li><i class="fas fa-comments"></i> <?php comments_number('');?></li>
+    <li class="noseparacion"> <?php echo do_shortcode('[post-views]'); ?></li>
+    <li><i class="far fa-calendar-minus"></i> Hace <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' '; ?></li>
+    <li><i class="fas fa-comments"></i> <?php comments_number('');?></li>
 </div>
 </div>
 
 <div class="descipricion_single">
-  <p><?php the_field('Descripción_video'); ?></p>
+  <p><?php the_field('descripcion'); ?></p>
 </div>
 
 <?php endwhile; else: ?>
@@ -44,7 +43,6 @@
 
 
 <div class="pagina_enblanco">
-  <p></p>
 </div>
 
 <?php include('footer.php');?>
