@@ -14,7 +14,7 @@
   <?php } else { ?>
     <!-- Acá la img que no está permitido -->
     <img src="<?php bloginfo('template_directory'); ?>/contenido-bloqueado.jpg" class="imgblock_" alt="Conotenido bloqueado">
-    <a href="<?php echo get_home_url(); ?>/membership-login/" class="boton_block_leads"><i class="fas fa-lock-open"></i>Unblock content</a>
+    <a href="<?php echo get_home_url(); ?>/membership-join/" class="boton_block_leads"><i class="fas fa-lock-open"></i>Unblock content</a>
   <?php } ?>
   </center>
   <h1 class="title-post"><?php the_title(); ?></h1>

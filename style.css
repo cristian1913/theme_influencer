@@ -1,5 +1,7 @@
 /*
 Theme Name: Influencer Theme
+Version: 1.0.3
+Author: Fans4.net
 */
 @import 'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900';
 :root {
@@ -79,8 +81,7 @@ a {
   background-color: #fff;
 }
 .home_users .portada_ {
-  background-color: var(--rojo);
-  background-image: url('cover.jpg');
+  background-color: rgb(50, 50, 50);
   background-size: cover;
   background-position: top center;
   width: 100%;
@@ -1079,3 +1080,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', end
   .dositems_ i:hover {
     color: var(--rojo);
   }
+
+.lwa-submit-button input[type=submit] {
+    background-color: rgb(81, 180, 65);
+  width: 90%;
+  padding: 10px 20px;
+  border: 0px;
+  border-radius: 2px;
+  color: #fff;
+}
+.lwa-remember-buttons input[type=submit] {
+  background-color:rgb(46, 139, 249);
+  width: 100%;
+  padding: 10px 20px;
+  border: 0px;
+  border-radius: 2px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+td.lwa-submit-links > label {
+  font-size: 11px;
+}
+.lwa-links-remember {
+  color: rgb(26, 76, 150);
+  font-size: 13px;
+  display: block;
+  font-weight: 500;
+}
+.lwa-remember {
+  padding-top: 80px;
+}

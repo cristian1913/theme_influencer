@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?php wp_title(''); echo '  ';  bloginfo( 'name' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css">
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/responsive.css">
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css?v=1.0.3">
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/responsive.css?v=1.0.3">
 <?php wp_head(); ?>
 <script src="https://kit.fontawesome.com/83686ed12e.js" crossorigin="anonymous"></script>
 </head>
@@ -19,11 +19,11 @@
     <li><a href="<?php echo get_home_url(); ?>/videos/"><i class="fab fa-youtube"></i></a></li>
     <?php if ( is_user_logged_in() ) { ?>
       <!-- Si está logueado muestre lo siguinete: -->
-      <li><a href="<?php echo get_home_url(); ?>/membership-login/"><i class="fas fa-user-alt"></i></a></li>
+      <!-- <li><a href="<?php echo get_home_url(); ?>/profile/"><i class="fas fa-user-alt"></i></a></li> -->
       <li><a href="<?php echo wp_logout_url( home_url() ); ?>"><i class="fas fa-sign-out-alt"></i></a></li>
     <?php } else { ?>
       <!-- Si no está logueado muestre lo siguiente -->
-      <li><a href="<?php echo get_home_url(); ?>/membership-login/"><i class="far fa-user-circle"></i></a></li>
+      <li><a href="<?php echo get_home_url(); ?>/login/"><i class="far fa-user-circle"></i></a></li>
     <?php } ?>
   </div>
   <div class="float_hed">.</div>

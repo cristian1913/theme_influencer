@@ -13,10 +13,10 @@ echo $blog_title;?>
 
 
 <div class="notice notice-warning is-dismissible">
-    <p>Por seguridad si necesitas hacer cambios en tus facturaciones escríbenos a <b>support@fans4.net</b></p>
+    <p>Por seguridad si necesitas hacer cambios en tus facturaciones escríbenos a <b>info@fans4.net</b></p>
 </div>
 
-<!-- <?php echo do_shortcode('[contact-form-7 id="173" title="Formulario de contacto 1"]'); ?> -->
+
 
 </div> <!-- Final grap! -->
 

@@ -1,7 +1,7 @@
 <div class="styky_">
   <div class="foto_">
     <a href="<?php echo get_home_url(); ?>">
-      <img src="<?php bloginfo('template_directory'); ?>/avatar.png" alt="">
+      <img src="<?php echo get_theme_mod('foto_perfil') ?>" alt="">
     </a>
   </div>
   <div class="nombre_">
@@ -14,6 +14,3 @@
     <?php }?>
   </div>
 </div>
-
-<!-- <a href="<?php echo get_home_url(); ?>" class="regresar_styki"><i class="fas fa-angle-double-left"></i>Regresar</a> -->
-<?php

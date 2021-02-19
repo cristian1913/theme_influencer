@@ -29,9 +29,10 @@ Template Name: Home
     <?php
     $file = get_field('video');
     if( !empty( $file ) ): ?>
+    <a href="<?php the_permalink(); ?>">
     <video controls>
-      <source src="<?php echo $file['url']; ?>">
-      </video>
+      <source src="<?php echo $file['url']; ?>"></video>
+    </a>
     <?php endif; ?>
   <?php } else { ?>
     <!-- Acá la img que no está permitido -->

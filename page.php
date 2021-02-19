@@ -24,7 +24,7 @@ body {
   <div class="quienes_">
     <div class="card_">
       <a href="<?php echo get_home_url(); ?>">
-      <img src="<?php bloginfo('template_directory'); ?>/avatar.png" alt="">
+      <img src="<?php echo get_theme_mod('foto_perfil') ?>" alt="">
       </a>
       <h3><?php echo get_bloginfo(); ?><img src="<?php bloginfo('template_directory'); ?>/verificado.png" alt="Perfil verificado!"></h3>
     </div>
@@ -43,7 +43,7 @@ body {
       </div>
     </div>
     <div class="texto_invita_">
-      <h2>Enjoy all my exclusive content from <b>$6</b> per month.</h2>
+      <h2>Enjoy all my exclusive content from <b>$<?php echo get_theme_mod('costo1'); ?></b> per month.</h2>
       <?php if ( is_user_logged_in() ) { ?>
         <!-- Acá podemos mostrar algo para el logeado -->
       <?php } else { ?>

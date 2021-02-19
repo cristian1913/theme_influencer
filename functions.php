@@ -1,6 +1,6 @@
 <?php
 
-add_filter('show_admin_bar', '__return_false');
+// add_filter('show_admin_bar', '__return_false');
 
 function hide_ping_track_wpse_103502() {
     if( get_post_type() === "post_type" ){
@@ -67,5 +67,24 @@ function my_ingresosdiarios(){
     // esc_html_e( 'Admin Page Test', 'textdomain' );
     include ('admin_pages/ingresos_diarios.php');
 }
+
+if ( ! defined( 'ABSPATH' ) ) exit;
+function cc_media_default() {
+	?>
+	<script type="text/javascript">
+		jQuery(document).ready(function($){ wp.media.controller.Library.prototype.defaults.contentUserSetting=false; });
+	</script>
+	<?php
+}
+
+add_action( 'admin_footer-post-new.php', 'cc_media_default' );
+add_action( 'admin_footer-post.php', 'cc_media_default' );
+
+/* Customizando sin estilos */
+function gamesquare_customizer_register($wp_customize) {
+  include 'custom/custom.php';
+}
+add_action('customize_register', 'gamesquare_customizer_register');
+
 
 ?>

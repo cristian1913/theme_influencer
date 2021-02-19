@@ -25,7 +25,7 @@ body {
     <div class="comprar_membresia">
       <div class="cabeza_membre">
         <h2>Access my exclusive content</h2>
-        <h3>Enjoy all my exclusive content from <b>$6</b> per month.</h3>
+        <h3>Enjoy all my exclusive content from <b>$<?php echo get_theme_mod('costo1'); ?></b> per month.</h3>
       </div>
       <div class="tabla_beneficios_">
         <li>Access to all of the content <i class="far fa-check-circle"></i></li>
@@ -38,21 +38,21 @@ body {
       <div class="tresplanes_membre">
         <div class="grid_">
           <i class="fas fa-crown"></i>
-          <h4>1 month 6$</h4>
+          <h4>1 month <?php echo get_theme_mod('costo1'); ?>$</h4>
           <!-- <small>20.000 pesos COL</small> -->
-          <a href="<?php echo get_home_url(); ?>/1-month/" class="bottom_membre">Buy now</a>
+          <?php echo get_theme_mod('boton_uno'); ?>
         </div>
         <div class="grid_">
           <i class="fas fa-crown"></i>
-          <h4>6 Months 46$</h4>
+          <h4>6 Months <?php echo get_theme_mod('costo6'); ?>$</h4>
           <!-- <small>90.000 pesos COL</small> -->
-          <a href="<?php echo get_home_url(); ?>/6-months/" class="bottom_membre">Buy now</a>
+          <?php echo get_theme_mod('boton_seis'); ?>
         </div>
         <div class="grid_">
           <i class="fas fa-crown"></i>
-          <h4>12 Months 126$</h4>
+          <h4>12 Months <?php echo get_theme_mod('costo12'); ?>$</h4>
           <!-- <small>300.000 pesos COL</small> -->
-          <a href="<?php echo get_home_url(); ?>/12-months/" class="bottom_membre">Buy now</a>
+          <?php echo get_theme_mod('boton_doce'); ?>
         </div>
       </div>
 
@@ -72,7 +72,7 @@ body {
   <div class="quienes_">
     <div class="card_">
       <a href="<?php echo get_home_url(); ?>">
-      <img src="<?php bloginfo('template_directory'); ?>/avatar.png" alt="">
+      <img src="<?php echo get_theme_mod('foto_perfil') ?>" alt="">
       </a>
       <h3><?php echo get_bloginfo(); ?><img src="<?php bloginfo('template_directory'); ?>/verificado.png" alt="Perfil verificado!"></h3>
     </div>
